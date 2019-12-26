@@ -18,6 +18,7 @@ class C01 implements I01 {
 public class WithoutLambdaExpressions01 {
 
     public static void main(String args[]) {
+
         I01 i01 = new C01();
         i01.m01();
     }
