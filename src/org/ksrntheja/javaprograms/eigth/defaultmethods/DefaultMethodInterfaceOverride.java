@@ -24,11 +24,18 @@ public class DefaultMethodInterfaceOverride implements DefaultMethodOverride {
         System.out.println("In DefaultMethodInterfaceOverride Class :: public void m1()");
     }
 
+    public void m2() {
+        System.out.println("Accessing Default method in Interface : DefaultMethodOverride.super.m1() : ");
+        DefaultMethodOverride.super.m1();
+    }
+
     public static void main(String args[]) {
 
         DefaultMethodInterfaceOverride defaultMethodInterfaceOverride = new DefaultMethodInterfaceOverride();
         defaultMethodInterfaceOverride.m1();
-
+        // DefaultMethodOverride.super.m1();
+        // 'org.ksrntheja.javaprograms.eigth.defaultmethods.DefaultMethodOverride' is not an enclosing
+        defaultMethodInterfaceOverride.m2();
     }
 
 }
